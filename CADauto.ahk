@@ -1,8 +1,4 @@
-﻿; Developed by Martin Lui
-; Issue with space bar when configuration is off but space bar positions are not working accordingly. 
-; Eating inputs.
-
-;Sets toggle for the macro key combination with SPACE
+﻿;Sets toggle for the macro key combination with SPACE
 var = 0
 toggle := false
 
@@ -20,7 +16,13 @@ return
 
 ;Initializes 
 Space::
+if (toggle){
 var = 0
+}
+else{
+Send,{Space}
+var = 1
+}
 return
 
 space up::
@@ -44,6 +46,7 @@ Send,{^}
 Else {
 Send,6
 }
+var = 1
 }
 ;For when the toggle is off
 else{
@@ -54,7 +57,6 @@ Else {
 Send,1
 }
 }
-var = 1
 return
 
 ;SPACE 2 = 7,SHIFT &
