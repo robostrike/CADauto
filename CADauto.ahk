@@ -70,6 +70,14 @@ Send,7
 }
 var=1
 }
+else{
+If (GetKeyState("Shift","P")) {
+Send,{@}
+}
+Else {
+Send,2
+}
+}
 Return
 
 ;SPACE 3 = 8, SHIFT *
@@ -82,6 +90,14 @@ Else {
 Send,8
 }
 var=1
+}
+else{
+If (GetKeyState("Shift","P")) {
+Send,{#}
+}
+Else {
+Send,3
+}
 }
 Return
 
