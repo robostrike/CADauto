@@ -1,19 +1,4 @@
 ﻿; Developed by Martin Lui
-; Issue with space bar when configuration is off but space bar positions are not working accordingly. 
-; Eating inputs.
-
-;Sets toggle for the macro key combination with SPACE
-var = 0
-toggle := false
-
-~Space & Enter::
-toggle := !toggle
-if (toggle) {
-        MsgBox, Macro commands turned ON
-    } else {
-        MsgBox, Macro commands turned OFF
-    }
-return
 
 ;-------------------------
 ;Set localized variable to check held down usage

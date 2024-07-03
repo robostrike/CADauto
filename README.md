@@ -7,10 +7,3 @@ Users will have to install AutoHotKey application in order to use the keys.
 
 V1.0:
 - Developed a key set layout for presses with "Space + key"
-- Included a variable toggle for Space so that holding it does not activate the press. Only on release
-
-V1.1:
-- Create an on and off press "Space + Enter" to toggle on the attributes.
-
-Bugs:
-- Space bar activation only on Space Up, but 
