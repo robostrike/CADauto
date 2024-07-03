@@ -37,14 +37,25 @@ Return
 
 ;SPACE 1 = 6, SHIFT ^
 Space & 1::
+if(toggle){
+If (GetKeyState("Shift","P")) {
+Send,{^}
+}
+Else {
+Send,6
+}
+}
+;For when the toggle is off
+else{
 If (GetKeyState("Shift","P")) {
 Send,{!}
 }
 Else {
 Send,1
 }
-var=1
-Return
+}
+var = 1
+return
 
 ;SPACE 2 = 7,SHIFT &
 Space & 2::
