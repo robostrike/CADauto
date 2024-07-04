@@ -12,7 +12,4 @@ V1.0:
 - Included a variable toggle for Space so that holding it does not activate the press. Only on release
 
 V1.1:
-- Create an on and off press "Space + Enter" to toggle on the attributes. 
-
-Bugs:
-- Space bar activation only on Space Up, but on toggle off, the space bar usage still is on space up. So need to figure out how to fix that.
+- Create an on and off press "Space + Enter" to toggle on the attributes.
