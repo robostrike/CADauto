@@ -1,5 +1,5 @@
 ﻿;Sets toggle for the macro key combination with SPACE
-var = 0
+tog_space = 0
 toggle := false
 
 ~Space & Enter::
@@ -17,19 +17,20 @@ return
 ;Initializes 
 Space::
 if (toggle){
-var = 0
+tog_space = 0
 }
 else{
 Send,{Space}
-var = 1
+tog_space = 1
 }
 return
 
+;Only when it is in the space condition does it have the space up function given the variable
 space up::
-if (var = 0) {
+if (tog_space = 0) {
 send,{Space}
 }
-var = 0
+tog_space = 0
 Return
 
 ;-------------------------
@@ -49,7 +50,7 @@ Send,{^}
 Else {
 Send,6
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -71,7 +72,7 @@ Send,{&}
 Else {
 Send,7
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -93,7 +94,7 @@ Send,{*}
 Else {
 Send,8
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -115,7 +116,7 @@ Send,{(}
 Else {
 Send,9
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -137,7 +138,7 @@ Send,{)}
 Else {
 Send,0
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -159,7 +160,7 @@ Send,{_}
 Else {
 Send,-
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -181,7 +182,7 @@ Send,{+}
 Else {
 Send,=
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -206,7 +207,7 @@ Send,{Y}
 Else {
 Send,y
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -228,7 +229,7 @@ Send,{U}
 Else {
 Send,u
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -250,7 +251,7 @@ Send,{I}
 Else {
 Send,i
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -272,7 +273,7 @@ Send,{O}
 Else {
 Send,o
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -294,7 +295,7 @@ Send,{P}
 Else {
 Send,p
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -319,7 +320,7 @@ Send,{H}
 Else {
 Send,h
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -341,7 +342,7 @@ Send,{J}
 Else {
 Send,j
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -363,7 +364,7 @@ Send,{K}
 Else {
 Send,k
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -385,7 +386,7 @@ Send,{L}
 Else {
 Send,l
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -407,7 +408,7 @@ Send,{:}
 Else {
 Send,;
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -429,7 +430,7 @@ Send,{"}
 Else {
 Send,'
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -454,7 +455,7 @@ Send,{N}
 Else {
 Send,n
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -476,7 +477,7 @@ Send,{M}
 Else {
 Send,m
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -498,7 +499,7 @@ Send,{<}
 Else {
 Send,,
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -520,7 +521,7 @@ Send,{>}
 Else {
 Send,.
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
@@ -542,7 +543,7 @@ Send,{?}
 Else {
 Send,/
 }
-var = 1
+tog_space = 1
 }
 ;For when toggle is off
 else{
