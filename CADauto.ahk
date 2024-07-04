@@ -1,4 +1,4 @@
-﻿;Sets toggle for the macro key combination with SPACE
+;Sets toggle for the macro key combination with SPACE
 tog_space = 0
 toggle := false
 
