@@ -5,6 +5,8 @@ Holding the Space key while pressing keys on the left hand side will initiate ke
 
 Users will have to install AutoHotKey application in order to use the keys.
 
+![alt text](https://github.com/robostrike/CADauto/blob/Toggle/keyboard-layout.png?raw=true)
+
 V1.0:
 - Developed a key set layout for presses with "Space + key"
 - Included a variable toggle for Space so that holding it does not activate the press. Only on release
