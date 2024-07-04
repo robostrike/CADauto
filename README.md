@@ -7,3 +7,5 @@ Users will have to install AutoHotKey application in order to use the keys.
 
 V1.0:
 - Developed a key set layout for presses with "Space + key"
+
+![alt text](https://github.com/robostrike/CADauto/blob/main/keyboard-layout.png)
