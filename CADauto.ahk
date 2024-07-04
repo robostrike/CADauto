@@ -35,12 +35,15 @@ Return
 ;-------------------------
 ;SPACE COMMANDS
 
+
+;-----------
 ;NUMBER Row
+
 
 ;SPACE 1 = 6, SHIFT ^
 Space & 1::
 if(toggle){
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{^}
 }
 Else {
@@ -48,33 +51,34 @@ Send,6
 }
 var = 1
 }
-;For when the toggle is off
+;For when toggle is off
 else{
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{!}
 }
-Else {
+else{
 Send,1
 }
 }
-return
+Return
 
-;SPACE 2 = 7,SHIFT &
+;SPACE 2 = 7, SHIFT &
 Space & 2::
 if(toggle){
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{&}
 }
 Else {
 Send,7
 }
-var=1
+var = 1
 }
+;For when toggle is off
 else{
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{@}
 }
-Else {
+else{
 Send,2
 }
 }
@@ -83,19 +87,20 @@ Return
 ;SPACE 3 = 8, SHIFT *
 Space & 3::
 if(toggle){
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{*}
 }
 Else {
 Send,8
 }
-var=1
+var = 1
 }
+;For when toggle is off
 else{
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{#}
 }
-Else {
+else{
 Send,3
 }
 }
@@ -104,211 +109,448 @@ Return
 ;SPACE 4 = 9, SHIFT (
 Space & 4::
 if(toggle){
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{(}
 }
 Else {
 Send,9
 }
-var=1
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{$}
+}
+else{
+Send,4
+}
 }
 Return
 
 ;SPACE 5 = 0, SHIFT )
 Space & 5::
 if(toggle){
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{)}
 }
-Else{
+Else {
 Send,0
 }
-var=1
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{%}
+}
+else{
+Send,5
+}
 }
 Return
 
 ;SPACE 6 = -, SHIFT _
-if(toggle){
 Space & 6::
-If (GetKeyState("Shift","P")) {
+if(toggle){
+if (GetKeyState("Shift","P")){
 Send,{_}
 }
-Else{
-Send,{-}
+Else {
+Send,-
 }
-var=1
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{^}
+}
+else{
+Send,6
+}
 }
 Return
 
-;SPACE 7 = {=}, SHIFT {+}
+;SPACE 7 = =, SHIFT +
 Space & 7::
 if(toggle){
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{+}
 }
-Else{
-Send,{=}
+Else {
+Send,=
 }
-var=1
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{&}
+}
+else{
+Send,7
+}
 }
 Return
 
-
+;-----------
 ;TOP Row
 
-;SPACE q = y
+;SPACE q = y, SHIFT Y
 Space & q::
 if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{Y}
+}
+Else {
 Send,y
-var=1
+}
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{Q}
+}
+else{
+Send,q
+}
 }
 Return
 
-;SPACE w = u
+;SPACE w = u, SHIFT U
 Space & w::
 if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{U}
+}
+Else {
 Send,u
-var=1
+}
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{W}
+}
+else{
+Send,w
+}
 }
 Return
 
-;SPACE e = i
+;SPACE e = i, SHIFT I
 Space & e::
 if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{I}
+}
+Else {
 Send,i
-var=1
+}
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{E}
+}
+else{
+Send,e
+}
 }
 Return
 
-;SPACE r = o
+;SPACE r = o, SHIFT O
 Space & r::
 if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{O}
+}
+Else {
 Send,o
-var=1
+}
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{R}
+}
+else{
+Send,r
+}
 }
 Return
 
-;SPACE t = p
+;SPACE t = p, SHIFT P
 Space & t::
 if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{P}
+}
+Else {
 Send,p
-var=1
+}
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{T}
+}
+else{
+Send,t
+}
 }
 Return
 
+;-----------
 ;MIDDLE Row
 
-;SPACE a = h
+;SPACE a = h, SHIFT H
 Space & a::
 if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{H}
+}
+Else {
 Send,h
-var=1
+}
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{A}
+}
+else{
+Send,a
+}
 }
 Return
 
-;SPACE s = j
+;SPACE s = j, SHIFT J
 Space & s::
 if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{J}
+}
+Else {
 Send,j
-var=1
+}
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{S}
+}
+else{
+Send,s
+}
 }
 Return
 
-;SPACE d = k
+;SPACE d = k, SHIFT K
 Space & d::
 if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{K}
+}
+Else {
 Send,k
-var=1
+}
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{D}
+}
+else{
+Send,d
+}
 }
 Return
 
-;SPACE f = l
+;SPACE f = l, SHIFT L
 Space & f::
 if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{L}
+}
+Else {
 Send,l
-var=1
+}
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{F}
+}
+else{
+Send,f
+}
 }
 Return
 
-;SPACE g = ; SHIFT :
+;SPACE g = ;, SHIFT :
 Space & g::
 if(toggle){
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{:}
 }
 Else {
-Send,{;}
+Send,;
 }
-var=1
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{G}
+}
+else{
+Send,g
+}
 }
 Return
 
-;SPACE h = ' SHIFT "
+;SPACE h = ', SHIFT "
 Space & h::
 if(toggle){
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{"}
 }
 Else {
-Send,{'}
+Send,'
 }
-var=1
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{H}
+}
+else{
+Send,h
+}
 }
 Return
 
+;-----------
 ;LOW Row
 
-;SPACE z = n
-if(toggle){
+;SPACE z = n, SHIFT N
 Space & z::
+if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{N}
+}
+Else {
 Send,n
-var=1
+}
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{Z}
+}
+else{
+Send,z
+}
 }
 Return
 
-;SPACE x = m
+;SPACE x = m, SHIFT M
 Space & x::
 if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{M}
+}
+Else {
 Send,m
-var=1
+}
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{X}
+}
+else{
+Send,x
+}
 }
 Return
 
-;SPACE c = ,
+;SPACE c = ,, SHIFT <
 Space & c::
 if(toggle){
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{<}
 }
 Else {
-Send,{,}
+Send,,
 }
-var=1
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{C}
+}
+else{
+Send,c
+}
 }
 Return
 
-;SPACE v = . SHIFT >
+;SPACE v = ., SHIFT >
 Space & v::
 if(toggle){
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{>}
 }
-Else{
-Send,{.}
+Else {
+Send,.
 }
-var=1
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{V}
+}
+else{
+Send,v
+}
 }
 Return
 
-;SPACE b = / SHIFT ?
+;SPACE b = /, SHIFT ?
 Space & b::
 if(toggle){
-If (GetKeyState("Shift","P")) {
+if (GetKeyState("Shift","P")){
 Send,{?}
 }
-Else{
-Send,{/}
+Else {
+Send,/
 }
-var=1
+var = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{B}
+}
+else{
+Send,b
+}
 }
 Return
