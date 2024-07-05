@@ -40,6 +40,28 @@ Return
 ;-----------
 ;NUMBER Row
 
+;SPACE ` = ENTER, SHIFT ENTER
+Space & {`}::
+if(toggle){
+if (GetKeyState("Shift","P")){
+Send,{Enter}
+}
+Else {
+Send,{Enter}
+}
+tog_space = 1
+}
+;For when toggle is off
+else{
+if (GetKeyState("Shift","P")){
+Send,{~}
+}
+else{
+Send,{`}
+}
+}
+Return
+
 
 ;SPACE 1 = 6, SHIFT ^
 Space & 1::
