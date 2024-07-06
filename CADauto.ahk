@@ -37,6 +37,18 @@ Return
 ;SPACE COMMANDS
 
 
+;SPACE TAB = Enter
+Space & Tab::
+if(toggle){
+Send,{Enter}
+tog_space = 1
+}
+else{
+Send,Tab
+}
+Return
+
+
 ;-----------
 ;NUMBER Row
 
@@ -142,7 +154,7 @@ tog_space = 1
 ;For when toggle is off
 else{
 if (GetKeyState("Shift","P")){
-Send,{%}
+Send,{`%}
 }
 else{
 Send,5
