@@ -13,3 +13,6 @@ V1.0:
 
 V1.1:
 - Create an on and off press "Space + Enter" to toggle on the attributes.
+
+V1.2
+- Create the Space + Tab hot key to feature Enter button. Fully encapsulating the right handed keyboard controls to as much as possible.
