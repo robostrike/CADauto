@@ -1,11 +1,12 @@
 ;Sets toggle for the macro key combination with SPACE
 tog_space = 0
-toggle := false
+toggle := true
+MsgBox, Macro commands turned ON, hold space bar for right keyboard controls
 
 ~Space & Enter::
 toggle := !toggle
 if (toggle) {
-        MsgBox, Macro commands turned ON
+        MsgBox, Macro commands turned ON, hold space bar for right keyboard controls
     } else {
         MsgBox, Macro commands turned OFF
     }
@@ -36,6 +37,17 @@ Return
 ;-------------------------
 ;SPACE COMMANDS
 
+
+;SPACE {`} = Backspace
+Space & VKC0::
+if (toggle){
+Send,{Backspace}
+tog_space = 1
+}
+else{
+Send,{`}
+}
+Return
 
 ;SPACE TAB = Enter
 Space & Tab::
