@@ -16,3 +16,6 @@ V1.1:
 
 V1.2
 - Create the Space + Tab hot key to feature Enter button. Fully encapsulating the right handed keyboard controls to as much as possible.
+
+V1.3
+- Added the back button with the ` button
