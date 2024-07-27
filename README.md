@@ -3,7 +3,7 @@ Creating a custom AutoHotKey layout for CAD users who use the mouse on the right
 
 Holding the Space key while pressing keys on the left hand side will initiate keys mapped normally on the right hand side.
 
-Users will have to install AutoHotKey application in order to use the keys.
+Users will have to install AutoHotKey application in order to use the keys. To deactivate the key commands, press SPACE + ENTER and a popup message will indicate what the condition is.
 
 ![alt text](https://github.com/robostrike/CADauto/blob/main/keyboard-layout.png?raw=true)
 
